@@ -33,7 +33,13 @@ console.groupEnd();
 console.group("Circunferencia");
 
     function perimetroCircunferencia(radio){
-        return 
+        const PI = Math.PI;
+        return PI*radio*2
+    }
+
+    function areaCircunferencia(radio){
+        const PI = Math.PI;
+        return PI*radio*radio
     }
 
 
