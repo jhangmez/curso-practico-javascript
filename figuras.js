@@ -32,13 +32,20 @@ console.groupEnd();
 //Codigo de una Circunferencia
 console.group("Circunferencia");
 
+    const PI = Math.PI;
+
+    function diametroCircunferencia(radio){
+        return radio *2
+    }
+
     function perimetroCircunferencia(radio){
-        const PI = Math.PI;
-        return PI*radio*2
+        
+        const diametro = diametroCircunferencia(radio);
+        return PI*diametro
     }
 
     function areaCircunferencia(radio){
-        const PI = Math.PI;
+        
         return PI*radio*radio
     }
 
