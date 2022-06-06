@@ -55,3 +55,5 @@ const areaCircunferencia = PI* radioCircunferencia*radioCircunferencia;
 console.log("El area de la Circunferencia es: " +areaCircunferencia);
 
 console.groupEnd();
+
+//Rama solo para constantes
