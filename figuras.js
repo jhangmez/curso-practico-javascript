@@ -49,5 +49,22 @@ console.group("Circunferencia");
         return PI*radio*radio
     }
 
-
 console.groupEnd();
+
+//Aqui comenzamos la interaccion con el html
+
+function calcularperimetroCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+}
+
+function calcularareaCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+
+    const area = areaCuadrado(value);
+    alert(area);
+}
