@@ -18,5 +18,6 @@ function calcularPrecioDescuento(){
     const value2 = Number(input2.value);
     
     const precioDescuento = calcularDescuento(value1, value2); 
-    alert("El precio con descuento es: " + precioDescuento);
+    // alert("El precio con descuento es: " + precioDescuento);
+    alert("El precio con un descuento del "+value2+" es de $"+precioDescuento);
 }
