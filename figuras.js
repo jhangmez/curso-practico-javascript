@@ -99,6 +99,22 @@ function calcularareaTriangulo(){
     alert("El area del triangulo es "+area);
 }
 
+function calcularalturaTriangulo(){
+    const input1 = document.getElementById("inputTriangulo1");
+    const input2 = document.getElementById("inputTriangulo2");
+    const base = document.getElementById("inputTriangulo3");
+    
+    const value1 = Number(input1.value);
+    const value2 = Number(input2.value);
+    const value3 = Number(base.value);
+    if(value1 === value2 && value1 != value3){
+        const altura = Math.sqrt(value1*value1- (value3*value3)/4);
+        alert("Es un triangulo isoceles y su altura es: "+altura);
+    }else{
+        alert("No es triangulo isoceles, pruebe con las demas opciones.")
+    }
+}
+
 //Circunferencia
 
 function calcularperimetroCircunferencia(){
