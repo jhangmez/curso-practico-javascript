@@ -1,58 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geometricas</title>
 </head>
+
 <body>
     <header>
         <h1>Figuras geometricas</h1>
         <p>Este es el primer taller del curso practico de JavaScript</p>
     </header>
     <section>
-        <h2>Calcular el area y perimetro de un cuadrado</h2>
-        <form>
-            <section class="Cuadrado">
+
+        <section class="Cuadrado">
+            <form>
+                <h2>Cuadrado</h2>
                 <label for="inputCuadrado">Escribe cuanto mide el lado de tu cuadrado</label>
-                <input type="number" id="inputCuadrado">
+                <input type="number" id="inputCuadrado" placeholder="Lado">
                 <button type="button" onclick="calcularperimetroCuadrado()">Calcular perimetro</button>
                 <button type="button" onclick="calcularareaCuadrado()">Calcular area</button>
-            </section>
-            <br>
-            <section class="Triangulo">
+                <br>
+            </form>
+        </section>
+        <section class="Triangulo">
+            <form>
+                <h2>Triangulo</h2>
                 <label for="inputTriangulo1">Escribe cuanto mide el lado 1 de tu Triangulo</label>
-                <input type="number" id="inputTriangulo1"><br>
+                <input type="number" id="inputTriangulo1" placeholder="Lado 1"><br>
                 <label for="inputTriangulo2">Escribe cuanto mide el lado 2 de tu Triangulo</label>
-                <input type="number" id="inputTriangulo2"><br>
+                <input type="number" id="inputTriangulo2" placeholder="Lado 2"><br>
                 <label for="inputTriangulo3">Escribe cuanto mide la base de tu Triangulo</label>
-                <input type="number" id="inputTriangulo3"><br>
+                <input type="number" id="inputTriangulo3" placeholder="Base"><br>
                 <label for="inputTriangulo4">Escribe cuanto mide la altura de tu Triangulo</label>
-                <input type="number" id="inputTriangulo4"><br>
+                <input type="number" id="inputTriangulo4" placeholder="Altura"><br>
                 <button type="button" onclick="calcularperimetroTriangulo()">Calcular perimetro</button>
                 <button type="button" onclick="calcularareaTriangulo()">Calcular area</button>
                 <button type="button" onclick="calcularalturaTriangulo()">Calcular altura</button>
-            </section>
-            <br>
-            <section class="Circunferencia">
+                <br>
+            </form>
+        </section>
+        <section class="Circunferencia">
+            <form>
+                <h2>Circunferencia</h2>
                 <label for="inputCircunferencia">Escribe cuanto mide el radio de tu Circunferencia</label>
-                <input type="number" id="inputCircunferencia">
+                <input type="number" id="inputCircunferencia" placeholder="Radio">
                 <button type="button" onclick="calcularperimetroCircunferencia()">Calcular perimetro</button>
                 <button type="button" onclick="calcularareaCircunferencia()">Calcular area</button>
-            </section>
-            <br>
-            
-
-        </form>
+                <br>
+            </form>
+        </section>
+        <section class="Descuentos">
+            <form>
+                <h2>Descuentos</h2>
+                <label for="inputPrecio">Cual es el precio</label>
+                <input type="number" id="inputPrecio" placeholder="Precio"><br>
+                <label>Cual es el descuento</label>
+                <input type="number" id="inputDescuento" placeholder="Descuento">%<br>
+                <button type="button" onclick="calcularPrecioDescuento()">Calcular Precio con Descuento</button>
+            </form>
+        </section>
     </section>
-
-
-
-    <script src="./figuras.js">
-
-
-
-    </script>
+    <script src="./figuras.js"></script>
+    <script src="./descuentos.js"></script>
 </body>
+
 </html>
