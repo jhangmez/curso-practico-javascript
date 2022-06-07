@@ -14,10 +14,33 @@
     <section>
         <h2>Calcular el area y perimetro de un cuadrado</h2>
         <form>
-            <label for="inputCuadrado">Escribe cuanto mide el lado de tu cuadrado</label>
-            <input type="number" id="inputCuadrado">
-            <button type="button" onclick="calcularperimetroCuadrado()">Calcular perimetro</button>
-            <button type="button" onclick="calcularareaCuadrado()">Calcular perimetro</button>
+            <section class="Cuadrado">
+                <label for="inputCuadrado">Escribe cuanto mide el lado de tu cuadrado</label>
+                <input type="number" id="inputCuadrado">
+                <button type="button" onclick="calcularperimetroCuadrado()">Calcular perimetro</button>
+                <button type="button" onclick="calcularareaCuadrado()">Calcular area</button>
+            </section>
+            <br>
+            <section class="Triangulo">
+                <label for="inputTriangulo1">Escribe cuanto mide el lado 1 de tu Triangulo</label>
+                <input type="number" id="inputTriangulo1"><br>
+                <label for="inputTriangulo2">Escribe cuanto mide el lado 2 de tu Triangulo</label>
+                <input type="number" id="inputTriangulo2"><br>
+                <label for="inputTriangulo3">Escribe cuanto mide la base de tu Triangulo</label>
+                <input type="number" id="inputTriangulo3"><br>
+                <label for="inputTriangulo4">Escribe cuanto mide la altura de tu Triangulo</label>
+                <input type="number" id="inputTriangulo4"><br>
+                <button type="button" onclick="calcularperimetroTriangulo()">Calcular perimetro</button>
+                <button type="button" onclick="calcularareaTriangulo()">Calcular area</button>
+            </section>
+            <br>
+            <section class="Circunferencia">
+                <label for="inputCircunferencia">Escribe cuanto mide el radio de tu Circunferencia</label>
+                <input type="number" id="inputCircunferencia">
+                <button type="button" onclick="calcularperimetroCircunferencia()">Calcular perimetro</button>
+                <button type="button" onclick="calcularareaCircunferencia()">Calcular area</button>
+            </section>
+
         </form>
     </section>
 
